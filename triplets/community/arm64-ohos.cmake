@@ -1,0 +1,10 @@
+
+set(VCPKG_TARGET_ARCHITECTURE arm64)
+
+set(VCPKG_CRT_LINKAGE static)
+set(VCPKG_LIBRARY_LINKAGE static)
+set(VCPKG_CMAKE_SYSTEM_NAME OHOS)
+#VCPKG_KEEP_ENV_VARS <-------Can help u add env into vcpkg
+set(VCPKG_CHAINLOAD_TOOLCHAIN_FILE "$ENV{VCPKG_REPO_ROOT}/scripts/toolchains/ohos.cmake")
+set(VCPKG_MAKE_BUILD_TRIPLET "--host=aarch64-linux-ohos")
+set(VCPKG_CMAKE_CONFIGURE_OPTIONS -DANDROID_ABI=arm64-v8a)
