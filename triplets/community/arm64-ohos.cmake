@@ -4,9 +4,7 @@ set(VCPKG_TARGET_ARCHITECTURE arm64)
 set(VCPKG_CRT_LINKAGE static)
 set(VCPKG_LIBRARY_LINKAGE static)
 set(VCPKG_CMAKE_SYSTEM_NAME OHOS)
-set(VCPKG_TARGET_IS_OHOS ON)
 
-#set(VCPKG_LOAD_VCVARS_ENV ON)
 set(VCPKG_CHAINLOAD_TOOLCHAIN_FILE "${CMAKE_CURRENT_LIST_DIR}/../../scripts/toolchains/ohos.cmake")
 
 #https://learn.microsoft.com/en-us/vcpkg/users/triplets#vcpkg_dep_info_override_vars
